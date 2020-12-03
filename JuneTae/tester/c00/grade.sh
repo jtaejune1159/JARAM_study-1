@@ -9,9 +9,9 @@ diff output_r output > difflog
 
 echo "===========================" >> log
 if grep "<" difflog;then
-	echo "Test Case : 1	    X" >> log
+	echo -e "Test Case : 1		" "\033[31mX\033[0m" >> log
 else
-	echo "Test Case : 1     V" >> log
+	echo -e "Test Case : 1		" "\033[32mV\033[0m" >> log
 fi
 echo "===========================" >> log
 
